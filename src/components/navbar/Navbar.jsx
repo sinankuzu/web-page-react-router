@@ -1,25 +1,27 @@
 import React from "react";
 import "../../App.css";
-
+import {NavLink, Link} from "react-router-dom"
 const Navbar = () => {
   return (
     <header>
       <div className="container">
         <div id="branding">
-          <h1>
-            <span className="highlight">Clarusway </span> Web Design
-          </h1>
+          <Link to="/">
+            <h1>
+              <span className="highlight">Clarusway </span> Web Design
+            </h1>
+          </Link>
         </div>
         <nav>
           <ul>
             <li>
-              <a>Home</a>
+              <NavLink to="/">Home</NavLink>
             </li>
             <li>
-              <a>About</a>
+              <NavLink to="/about">About</NavLink>
             </li>
             <li>
-              <a>Services</a>
+              <NavLink to="/services">Services</NavLink>
             </li>
           </ul>
         </nav>

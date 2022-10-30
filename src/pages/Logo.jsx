@@ -1,11 +1,11 @@
 import React from "react";
-import css from "../assets/img/logo_css.png";
-
-const Css = () => {
+import logo from "../assets/img/logo_brush.png";
+import {Link} from "react-router-dom"
+const Logo = () => {
   return (
     <div className="card">
-      <img src={css} alt="" />
-      <h3>CSS3 Styling</h3>
+      <img src={logo} alt="" />
+      <h3>HTML5 Markup</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
         voluptates voluptas similique qui ipsa sunt aliquam? Quos minima
@@ -32,9 +32,11 @@ const Css = () => {
         rerum ab at? Iure consectetur debitis illum totam, quam eaque ipsum quo
         esse at nulla suscipit soluta. Incidunt labore alias dignissimos.
       </p>
-      <button className="button_1">Go Back</button>
+      <Link to="/">
+        <button className="button_1">Go Back</button>
+      </Link>
     </div>
   );
 };
 
-export default Css;
+export default Logo;

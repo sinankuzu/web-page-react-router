@@ -1,10 +1,12 @@
 import React from "react";
-import logo from "../assets/img/logo_brush.png";
+import html from "../assets/img/logo_html.png";
+import {Link} from "react-router-dom"
 
-const Logo = () => {
+const HTML = () => {
   return (
     <div className="card">
-      <img src={logo} alt="" />
+      <img src={html} alt="" />
+
       <h3>HTML5 Markup</h3>
       <p>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus
@@ -32,9 +34,11 @@ const Logo = () => {
         rerum ab at? Iure consectetur debitis illum totam, quam eaque ipsum quo
         esse at nulla suscipit soluta. Incidunt labore alias dignissimos.
       </p>
-      <button className="button_1">Go Back</button>
+      <Link to="/">
+        <button className="button_1">Go Back</button>
+      </Link>
     </div>
   );
 };
 
-export default Logo;
+export default HTML;

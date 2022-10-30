@@ -1,3 +1,7 @@
+import Card from "../components/card/Card"
+import Subscribe from "../components/subscribe/Subscribe";
+
+
 const Home = () => {
   return (
     <div className="root">
@@ -11,9 +15,11 @@ const Home = () => {
           </p>
         </div>
       </section>
-      {/* use Subscribe component here */}
+      {<Subscribe/>}
       <section id="boxes">
-        <div className="container">{/* use Card component here */}</div>
+        <div className="container">
+          {<Card />}
+        </div>
       </section>
     </div>
   );
