@@ -22,7 +22,7 @@ const Card = ({ src, url, title }) => {
         <Link to="css">
           <img src={Css} alt="" />
         </Link>
-        <h3>CSS</h3>
+        <h3>CSS33</h3>
         <p>
           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus mi
           augue, viverra sit amet ultricies
